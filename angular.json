@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/sass/styles.scss"
             ],
             "scripts": []
           },
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "clicker"
+    }
+  },
+  "defaultProject": "clicker",
+  "cli": {
+    "analytics": false
+  }
 }
