@@ -1,0 +1,10 @@
+<div class="game-wrapper">
+  <h1 class="title">Click as fast as you can!</h1>
+  <h1 *ngIf="counter > 0" class="timer">Time left {{counter}}</h1>
+  <div class="button-container">
+    <button (click)="increment()" class="click-btn">Click</button>
+  </div>
+  <p class="score-label">Your current score is {{score}}</p>
+  <p class="message" *ngIf="message">{{message}}</p>
+  <app-button [routerLink]="['/player-profile', player.name]" [text]="'Go Back'" *ngIf="message"></app-button>
+</div>

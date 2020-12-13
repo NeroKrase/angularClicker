@@ -1,0 +1,57 @@
+@import "src/sass/mixins";
+
+.game-wrapper{
+  @include wrapper(400px)
+}
+
+.title{
+  @include font;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.timer{
+  @include font;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button-container{
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.click-btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #03e9f4;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.click-btn:hover {background-color: #03e9f4}
+
+.click-btn:active {
+  background-color: #03e9f4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.score-label{
+  text-align: center;
+  @include font;
+  font-size: 20px;
+}
+
+.message{
+  text-align: center;
+  @include font;
+}

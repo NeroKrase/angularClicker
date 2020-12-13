@@ -1,0 +1,74 @@
+@import "src/sass/mixins";
+
+.profile-info{
+  @include wrapper(700px)
+}
+
+.title{
+  @include font;
+  font-size: 24px;
+  text-align: center;
+}
+
+.label{
+  @include font;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.game-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.records-box{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.records-btn{
+  border-radius: 4px;
+  padding: 10px 20px;
+  @include font;
+  text-transform: uppercase;
+  transition: .5s;
+  letter-spacing: 4px;
+  background-color: darken(#03e9f4, 20%);
+  border: none;
+  box-shadow: 0 0 5px #03e9f4,
+  0 0 25px #03e9f4,
+  0 0 50px #03e9f4,
+  0 0 100px #03e9f4;
+}
+
+.records-btn:hover{
+  background-color: #03e9f4;
+  box-shadow: 0 0 5px darken(#03e9f4, 20%),
+  0 0 25px darken(#03e9f4, 20%),
+  0 0 50px darken(#03e9f4, 20%),
+  0 0 100px darken(#03e9f4, 20%);
+}
+
+.sign-out-btn{
+  border-radius: 4px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  @include font;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  transition: .5s;
+  letter-spacing: 4px;
+  background-color: #03e9f4;
+  border: none;
+}
+
+.sign-out-btn:hover{
+  box-shadow: 0 0 5px #000,
+  0 0 25px #000,
+  0 0 50px #000,
+  0 0 100px #000;
+}

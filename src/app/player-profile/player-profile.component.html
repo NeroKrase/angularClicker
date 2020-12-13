@@ -1,0 +1,22 @@
+<div class="profile-info">
+  <h1 class="title">Player profile</h1>
+  <h4 class="label">Name: {{player.name}}</h4>
+  <div class="game-box">
+    <h4 class="label">5 seconds record: {{player.record5s}}</h4>
+    <app-button [routerLink]="['/game', 5]" [queryParams]="{name: player.name}" [text]="'Start 5s'"></app-button>
+  </div>
+  <div class="game-box">
+    <h4 class="label">10 seconds record: {{player.record10s}}</h4>
+    <app-button [routerLink]="['/game', 10]" [queryParams]="{name: player.name}" [text]="'Start 10s'"></app-button>
+  </div>
+  <div class="game-box">
+    <h4 class="label">15 seconds record: {{player.record15s}}</h4>
+    <app-button [routerLink]="['/game', 15]" [queryParams]="{name: player.name}" [text]="'Start 15s'"></app-button>
+  </div>
+  <div class="records-box">
+    <button [routerLink]="['/records', 5]" [queryParams]="{name: player.name}" class="records-btn">5s records</button>
+    <button [routerLink]="['/records', 5]" [queryParams]="{name: player.name}" class="records-btn">10s records</button>
+    <button [routerLink]="['/records', 5]" [queryParams]="{name: player.name}" class="records-btn">15s records</button>
+  </div>
+    <button (click)="backToForm()" class="sign-out-btn">Sign Out</button>
+</div>

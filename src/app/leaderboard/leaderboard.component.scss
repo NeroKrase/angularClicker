@@ -1,0 +1,18 @@
+@import "src/sass/mixins";
+
+.board-wrapper{
+  @include wrapper(400px)
+}
+
+.title{
+  @include font;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.leader-box{
+  @include font;
+  display: flex;
+  justify-content: space-between;
+}

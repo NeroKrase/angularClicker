@@ -1,0 +1,50 @@
+@import "src/sass/mixins";
+.form-wrapper {
+  @include wrapper(400px)
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-wrapper h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.form-wrapper .input-box {
+  position: relative;
+}
+
+.form-wrapper .input-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.form-wrapper .input-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.form-wrapper .input-box input:focus ~ label,
+.form-wrapper .input-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}

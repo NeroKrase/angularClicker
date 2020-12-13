@@ -1,0 +1,10 @@
+<div class="board-wrapper">
+  <h1 class="title">Leaderboard:</h1>
+  <div class="leader-box" *ngFor="let p of players;let i = index">
+    <p *ngIf="i < 10">{{i + 1}}. {{p.name}}</p>
+    <p *ngIf="time === 5 && i < 10">{{p.record5s}}</p>
+    <p *ngIf="time === 10 && i < 10">{{p.record10s}}</p>
+    <p *ngIf="time === 15 && i < 10">{{p.record15s}}</p>
+  </div>
+  <app-button [routerLink]="['/player-profile', name]" [text]="'Go Back'"></app-button>
+</div>

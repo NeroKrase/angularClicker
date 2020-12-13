@@ -1,0 +1,13 @@
+<div class="form-wrapper">
+  <h2>Enter your name</h2>
+  <form>
+    <div class="input-box">
+      <input type="text" [(ngModel)]="name" name="name">
+      <label>Username</label>
+    </div>
+    <div class="buttons">
+      <app-button (click)="login(name)" [text]="'Sign In'"></app-button>
+      <app-button (click)="addNewPlayer(name)" [text]="'Sign Up'"></app-button>
+    </div>
+  </form>
+</div>

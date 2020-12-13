@@ -1,0 +1,18 @@
+@mixin wrapper($width){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $width;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #575656;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px #575656;
+  border-radius: 10px;
+}
+
+@mixin font{
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
